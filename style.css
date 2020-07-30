@@ -9,6 +9,24 @@ body {
 
 /* ---------------------------------------------------- */
 
+.tym {
+	display: flex;
+	flex-direction: column;
+
+}
+
 .osoba img {
 	border-radius: 50%;
+}
+
+
+
+.osoba {
+	flex-wrap: wrap;
+	border: 1px solid gray;
+	margin: 20px;
+	padding: 20px;
+	flex-basis: calc( 100% / 4);
+	text-align: center;
+
 }
