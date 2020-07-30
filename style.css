@@ -9,11 +9,7 @@ body {
 
 /* ---------------------------------------------------- */
 
-.tym {
-	display: flex;
-	flex-direction: column;
 
-}
 
 .osoba img {
 	border-radius: 50%;
@@ -22,11 +18,23 @@ body {
 
 
 .osoba {
-	flex-wrap: wrap;
 	border: 1px solid gray;
 	margin: 20px;
 	padding: 20px;
-	flex-basis: calc( 100% / 4);
 	text-align: center;
 
+}
+
+ @media  (min-width:540px) {
+	 .tym {display: flex;
+		flex-wrap: wrap; }
+	.osoba {width: calc(50% - 40px);
+	 }
+ }
+
+ @media  (min-width:960px) {
+	.tym {display: flex;
+	   flex-wrap: wrap; }
+   .osoba {width: calc(25% - 40px);
+	}
 }
